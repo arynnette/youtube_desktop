@@ -14,11 +14,13 @@ const createWindow = () => {
     icon: path.join(__dirname, 'assets/icons/png/64x64.png')
   });
 
-  win.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes: true
-  }));
+  // win.loadURL(url.format({
+  //   pathname: path.join(__dirname, 'index.html'),
+  //   protocol: 'file:',
+  //   slashes: true
+  // }));
+  
+  win.loadURL("https://www.youtube.com");
 
   win.webContents.openDevTools();
 
